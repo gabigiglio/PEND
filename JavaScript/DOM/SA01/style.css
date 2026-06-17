@@ -1,0 +1,129 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5ba1bc;
+    flex-direction: column;
+}
+
+input {
+    padding: 5px;
+    width: 200px;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Formulário */
+.form {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    /* diminui o espaço entre o título e o formulário */
+    color: #0e2b37;
+    font-size: 24px;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #5f9ea0;
+    outline: none;
+}
+
+/* Botão */
+#validar {
+    width: 100%;
+    padding: 12px;
+    background: #5f9ea0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#validar:hover {
+    background: #53868b;
+}
+
+
+
+#addtelefone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    height: 25px;
+    width: 25px;
+    background: #5f9ea0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: left;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#removertelefone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    height: 25px;
+    width: 25px;
+    background: #5f9ea0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: left;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+
+.container-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#telefones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#telefones input {
+    display: block;
+    margin-bottom: 10px;
+}

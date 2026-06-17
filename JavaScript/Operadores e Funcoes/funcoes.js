@@ -20,8 +20,8 @@ console.log(somar(5, 3));
 function imc(peso, alt) {
     return peso / (alt * alt);
 }
-let peso = 57;
-let alt = 1.65;
+let peso = prompt("Digite seu peso:");
+let alt = prompt("Digite sua altura:");
 console.log("Seu IMC é:", imc(peso, alt));
 
 
@@ -33,5 +33,12 @@ function imparpar(num) {
         return "Ímpar";
     }
 }
-let num = 13;
+let num = prompt("Digite um número:");
 console.log("O número é:", imparpar(num));
+
+
+//funções nativas- Data e Hora
+console.log("Funções nativas ");
+
+let agora = new Date();
+console.log(agora);

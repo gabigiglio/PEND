@@ -1,0 +1,129 @@
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    background-color: #333;
+    overflow: hidden;
+    }
+li{
+    float: center;
+    
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #4d0303;
+}
+li a:active{
+    background-color: #931111;
+}
+
+li{
+    margin: auto;
+    text-align: center;
+    list-style: none;
+
+
+}
+div {
+    border: solid 2px black;
+    list-style: circle;
+    background-color: rgb(143, 141, 141);
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+ 
+* { 
+    margin: 20px; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+/* .classe= reutilizavel para varios elementos*/
+.destaque {
+    color: blue;
+    font-weight: bold;
+/* #id= unico para um elemento*/
+}
+#titulo-principal {
+    color: red;
+    text-align: center;
+}
+/* tag= altera todos os elementos do tipo */
+
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    color : rgb(123, 123, 123);
+}
+h4{
+    line-height: 1.5; /* espaçamento entre linhas */
+    letter-spacing: 2px; /* espaçamento entre letras */
+    word-spacing: 5px; /* espaçamento entre palavras */
+}
+img {
+    height : auto;
+    border: 2px;
+    display : block;
+    margin : auto;
+    width: 800px;
+}
+ul {
+    list-style-type : none; 
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    background-color: #333;
+    
+    
+}
+.class1,
+.class2,
+.class3,
+.class4,
+.class5 {
+
+width: 200px;
+border-radius: 2000px;
+}
+body {
+    background-color: rgb(77, 24, 24);
+}
+
+/*tablet*/
+@media (max-width: 1023px) and (min-width: 768px) {
+    h2 {
+        color: rgb(165, 17, 17);
+    }
+    h1 {
+        color: rgb(18, 18, 129);
+    }
+    div {
+        background-color: rgb(45, 110, 147);
+    }
+}
+/*celular*/
+@media (max-width: 767px) {
+    h2 {
+        color: palevioletred;
+    }
+    h1 {
+        color: rgb(136, 49, 182);
+    }
+    div {
+        background-color: rgb(135, 199, 237);
+    }
+}

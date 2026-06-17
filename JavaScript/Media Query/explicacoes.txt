@@ -1,0 +1,41 @@
+Quais melhorias foram realizadas?
+
+Foram realizadas diversas melhorias no portal NewsToday em comparação
+com a versão inicial. O layout foi reorganizado para tornar a navegação
+mais intuitiva e agradável, as notícias passaram a ser exibidas de forma
+mais organizada, foram adicionados efeitos visuais de interação,
+padronização das imagens e criação de categorias específicas para os
+conteúdos. Além disso, o site foi adaptado para diferentes tamanhos de
+tela, garantindo uma experiência melhor para todos os usuários.
+
+Quais elementos semânticos foram utilizados?
+
+Foram utilizados elementos semânticos do HTML5 para estruturar melhor a
+página. O
+foi utilizado para o cabeçalho do site, o
+para o menu de navegação, o
+para o conteúdo principal, o
+para separar as categorias de notícias, o
+para representar cada notícia individualmente e o
+para o rodapé. Esses elementos tornam o código mais organizado,
+acessível e otimizado para mecanismos de busca.
+
+Quais Media Queries foram implementadas?
+
+Foram implementadas Media Queries para adaptar o site a diferentes
+dispositivos. Para telas de até 992 pixels, foram realizados ajustes no
+layout para melhorar a visualização em tablets. Já para telas de até 768
+pixels, o menu passou a ser exibido verticalmente, as notícias foram
+reorganizadas em uma única coluna e os tamanhos dos elementos foram
+ajustados para facilitar a leitura e navegação em smartphones.
+
+Quais decisões de UX e UI foram adotadas?
+
+Em relação à UX (Experiência do Usuário), foi priorizada uma navegação
+simples, organizada e intuitiva, permitindo que os usuários encontrem
+facilmente as categorias e notícias desejadas. Já na UI (Interface do
+Usuário), foi adotada uma paleta de cores baseada em tons de azul e
+branco para transmitir credibilidade, além da utilização de cartões para
+as notícias, sombras, bordas arredondadas e efeitos de hover em botões e
+links. Essas decisões contribuíram para criar uma interface mais
+moderna, agradável e profissional.
