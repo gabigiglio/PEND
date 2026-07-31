@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="topo">
+        <div class="logo">
+            <img src="img/eu.jpeg" alt="Foto de Gabriela">
+        </div>
+        <h1>Sobre Mim</h1>
+
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#interesses">Interesses</a>
+            <a href="#objetivos">Objetivos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    <main id="inicio">
+        <p>Olá! Me chamo Gabriela Giglio e tenho 17 anos anos. Sou estudante do curso técnico em Desenvolvimento de Sistemas 
+        no SESI, moro atualmente em Mococa-SP.</p>
+        <p>Tenho três gatas que são muito especiais para mim: a Luna, a Nina e a Francisca. Elas fazem parte do meu dia a dia e 
+        tornam minha rotina mais alegre e divertida. Gosto de passar tempo com elas, cuidar delas e aproveitar os momentos de 
+        carinho e brincadeiras, pois acredito que os animais trazem companhia, conforto e deixam a vida mais leve.</p>
+        <div class="gatas">
+            <img src="img/lu.jpeg" alt="Luna">
+            <img src="img/nina.jpeg" alt="Nina">
+            <img src="img/fran.jpeg" alt="Francisca">
+        </div><br>
+    
+
+        <section id="interesses">
+        <h2 class="categoria">Interesses</h2>
+        <div class="conteudo">
+             <p>Gosto de assistir a filmes de diferentes gêneros, especialmente aqueles que apresentam histórias envolventes
+            e personagens marcantes, além de apreciar como o cinema desperta emoções e diferentes perspectivas sobre o
+            mundo. Meus filmes preferidos são "Before Sunrise", "Sing Street" e "The Shawshank Redemption", que me inspiram 
+            e me fazem refletir sobre a vida e as relações humanas.</p> 
+             <p>A leitura também faz parte dos meus interesses, já que os livros ampliam meu conhecimento, estimulam
+            minha imaginação e contribuem para o desenvolvimento do pensamento crítico. Esses hobbies fazem parte do meu
+            dia a dia e refletem minha curiosidade e vontade de aprender continuamente.</p>
+             <p>Também gosto de ir à academia, pois me faz sentir bem, ajuda a cuidar da minha saúde e é uma forma de manter uma
+            rotina.</p>
+        </div>
+        </section>
+
+        <section id="objetivos">
+        <h2 class="categoria">Objetivos</h2>
+        <div class="conteudo">
+            <p>Um dos meus maiores objetivos é concluir o curso técnico em Desenvolvimento de Sistemas e dar continuidade aos meus 
+            estudos. Quero fazer faculdade de Engenharia de Materiais, uma área pela qual tenho muito interesse, e planejo me 
+            mudar para São Carlos para estudar na USP ou na UFSCar. Sei que esse caminho vai exigir muito esforço, dedicação e 
+            foco, mas acredito que todo esse empenho vai valer a pena. Espero crescer tanto profissionalmente quanto pessoalmente 
+            durante essa nova etapa e construir uma carreira da qual eu tenha orgulho.</p>
+        </div>
+        </section>
+
+        <section id="contato">
+    <h2 class="categoria">Contato</h2>
+
+    <form onsubmit="return validarFormulario()">
+
+        <label>Nome:</label>
+        <input type="text" id="nome">
+
+        <label>E-mail:</label>
+        <input type="email" id="email">
+
+        <label>Mensagem:</label>
+        <textarea id="mensagem"></textarea>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <p id="resultado"></p>
+</section>
+    </main>
+
+    <footer class="rodape" id="footer">
+        <p>© 2026 Gabriela Giglio. Todos os direitos reservados.</p>
+        <p>1999999999999 | gabriela.giglio@email.com</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

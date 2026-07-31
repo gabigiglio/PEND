@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f5f2fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+
+.topo{
+    background-color: #5a3d8c;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topo h1{
+    font-size: 2rem;
+}
+
+/* Menu */
+
+.menu{
+    display: flex;
+    gap: 25px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: #d8c3ff;
+}
+
+/* Conteúdo */
+
+main{
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+main > p{
+    background-color: white;
+    padding: 20px;
+    border-left: 5px solid #7b4fc9;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Seções */
+
+section{
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.categoria{
+    color: #5a3d8c;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #b89cff;
+    padding-bottom: 8px;
+}
+
+.conteudo{
+    text-align: justify;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea{
+    padding: 10px;
+    border: 1px solid #7b4fc9;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+input[type="submit"]{
+    background-color: #5a3d8c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover{
+    background-color: #7b4fc9;
+}
+
+/* Rodapé */    
+footer{
+    background-color: #5a3d8c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 15px;
+    border-top: 4px solid #8f6bd8;
+}
+
+footer p{
+    margin: 0;
+}
+
+/* logo */
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+/* Gatas */
+.gatas{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gatas img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #7b4fc9;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.gatas img:hover{
+    transform: scale(1.05);
+}
+
+#resultado{
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px){
+
+    .topo{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .menu{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main{
+        width: 90%;
+    }
+
+}
