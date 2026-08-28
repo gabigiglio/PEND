@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5dfeb;
+    padding: 30px;
+}
+
+h1 {
+    color: #7d2e52;
+    margin-bottom: 15px;
+}
+
+body > p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#mensagem {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    min-height: 25px;
+}
+
+.animais {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.animal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 180px;
+}
+
+.animal h2 {
+    margin-bottom: 15px;
+}
+
+.area-drop {
+    border: 2px dashed #af4c8b;
+    padding: 30px 10px;
+    border-radius: 8px;
+    color: #777;
+}
+
+.comidas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.comida {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 40px;
+    cursor: grab;
+}
+
+.comida:hover {
+    transform: scale(1.1);
+}
+
+.area-drop .comida {
+    font-size: 35px;
+    padding: 5px;
+    cursor: default;
+}
