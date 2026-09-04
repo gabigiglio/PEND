@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Geolocation e Câmera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- O projeto consiste em uma página web para registro de ocorrências. O usuário 
+pode informar o tipo e a descrição do problema, registrar uma imagem utilizando 
+a câmera do dispositivo e obter automaticamente a localização do ocorrido por 
+meio da Geolocation API. Dessa forma, o registro contém evidências visuais e 
+informações sobre o local da ocorrência. -->
+<body>
+    
+<div class="container">
+
+    <h1>🚨 Registro de Ocorrência</h1>
+
+    <h2>Informações da ocorrência</h2>
+
+    <label>Tipo de ocorrência:</label>
+    <select>
+        <option>Buraco na rua</option>
+        <option>Lixo acumulado</option>
+        <option>Poste danificado</option>
+        <option>Árvore caída</option>
+        <option>Outro</option>
+    </select>
+
+    <label>Descrição:</label>
+    <textarea placeholder="Descreva a ocorrência..."></textarea>
+
+    <div class="localizacao">
+
+        <h2>📍 Localização</h2>
+
+        <p>Latitude: <span id="latitude">Aguardando...</span></p>
+
+        <p>Longitude: <span id="longitude">Aguardando...</span></p>
+
+        <p>Precisão: <span id="precisao">Aguardando...</span></p>
+
+    </div>
+
+    <div class="camera">
+
+        <h2>📷 Registro fotográfico</h2>
+
+        <video id="camera" autoplay></video>
+
+    </div>
+
+    <button>Registrar ocorrência</button>
+
+    <p id="mensagem"></p>
+
+</div>
+
+
+    <video id="camera" autoplay></video>
+    <script src="script.js"></script>
+</body>
+</html>
