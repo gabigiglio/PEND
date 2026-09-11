@@ -3,6 +3,18 @@ const canvas = document.querySelector("#canvas");
 const botao = document.querySelector("#botao");
 const foto = document.querySelector("#foto");
 
+navigator.geolocation.getCurrentPosition
+    (function(position) {
+        document.getElementById("latitude").textContent = position.coords.latitude;
+        document.getElementById("longitude").textContent = position.coords.longitude;
+        document.getElementById("precisao").textContent = position.coords.accuracy + " metros";
+    },
+    function(erro) {
+        console.log("Erro ao obter a localização: ", erro);
+    }  
+);
+
+
 navigator.mediaDevices.getUserMedia({
     video: true,
     audio: true
@@ -29,3 +41,4 @@ botao.addEventListener("click", function() {
     );
     foto.src = canvas.toDataURL("image/png");
 });
+

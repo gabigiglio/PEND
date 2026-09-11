@@ -1,3 +1,5 @@
+
+
 navigator.geolocation.getCurrentPosition
     (function(position) {
         document.getElementById("latitude").textContent = position.coords.latitude;
@@ -21,4 +23,3 @@ navigator.mediaDevices.getUserMedia({
 .catch(function(erro) {
     console.log("Erro ao acessar a câmera: ", erro);
 });
-
