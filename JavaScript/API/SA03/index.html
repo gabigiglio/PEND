@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsToday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topo">
+        <h1>NewsToday</h1>
+
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#tecnologia">Tecnologia</a>
+            <a href="#esportes">Esportes</a>
+            <a href="#economia">Economia</a>
+            <a href="#clima">Previsão do Tempo</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+
+    <main id="inicio">
+
+        <!-- PESQUISA -->
+        <section class="busca">
+            <h2>Pesquisar notícias</h2>
+
+            <input 
+                type="text" 
+                id="campoBusca" 
+                placeholder="Digite o que deseja pesquisar..."
+            >
+
+            <button id="botaoBuscar">Buscar notícias</button>
+
+            <div id="resultadoBusca"></div>
+        </section>
+
+
+        <!-- NOTÍCIAS PRINCIPAIS -->
+        <section id="destaques">
+            <h2 class="categoria">Últimas notícias</h2>
+
+            <div class="destaques" id="noticiasDestaque">
+                <!-- O JavaScript coloca as notícias aqui -->
+            </div>
+        </section>
+
+
+        <!-- TECNOLOGIA -->
+        <section id="tecnologia">
+            <h2 class="categoria">Tecnologia</h2>
+
+            <div class="conteudo" id="noticiasTecnologia">
+                <!-- O JavaScript coloca as notícias aqui -->
+            </div>
+        </section>
+
+
+        <!-- ESPORTES -->
+        <section id="esportes">
+            <h2 class="categoria">Esportes</h2>
+
+            <div class="conteudo" id="noticiasEsportes">
+                <!-- O JavaScript coloca as notícias aqui -->
+            </div>
+        </section>
+
+
+        <!-- ECONOMIA -->
+        <section id="economia">
+            <h2 class="categoria">Economia</h2>
+
+            <div class="conteudo" id="noticiasEconomia">
+                <!-- O JavaScript coloca as notícias aqui -->
+            </div>
+        </section>
+
+    </main>
+
+        <section id="clima" class="clima">
+    <h2>🌤️ Previsão do Tempo</h2>
+
+    <div class="pesquisa-clima">
+        <input type="text" id="cidade" placeholder="Digite uma cidade">
+        <button id="buscarClima">Buscar</button>
+    </div>
+
+    <div id="resultadoClima"></div>
+</section>
+
+
+    <footer class="rodape" id="contato">
+        <p>NewsToday © 2026 - Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+

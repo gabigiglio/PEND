@@ -24,7 +24,6 @@ h1::after {
     content: " 🐾";
 }
 
-/* Texto/área de busca */
 #quantidadeGatos {
     width: 220px;
     padding: 12px 15px;
@@ -40,7 +39,6 @@ h1::after {
     border-color: #a9572d;
 }
 
-/* Botão */
 #buscarGatos {
     padding: 12px 22px;
     margin-left: 8px;
@@ -59,7 +57,6 @@ h1::after {
     transform: scale(1.05);
 }
 
-/* Área onde aparecem os gatos */
 #resultado {
     margin-top: 35px;
     display: flex;
@@ -68,7 +65,6 @@ h1::after {
     gap: 25px;
 }
 
-/* Cada gato */
 #resultado p {
     width: 330px;
     background-color: #fffaf5;
@@ -80,7 +76,6 @@ h1::after {
     font-weight: bold;
 }
 
-/* Imagens */
 #resultado img {
     width: 300px;
     height: 250px;
@@ -90,7 +85,6 @@ h1::after {
     border: 5px solid #f0a35b;
 }
 
-/* Linha */
 #resultado hr {
     display: none;
 }

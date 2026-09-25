@@ -1,0 +1,348 @@
+.categoria{
+    max-width:1400px;
+    margin:40px auto 20px;
+    padding:0 20px;
+    font-size:2rem;
+    color:#172c67;
+}
+
+.destaques{
+    max-width:1400px;
+    margin:auto;
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:20px;
+}
+
+.principal{
+    position:relative;
+    height:500px;
+    border-radius:20px;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.principal img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.principal:hover img{
+    transform:scale(1.08);
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:35px;
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.9)
+    );
+}
+
+.overlay span{
+    background:#172c67;
+    color:white;
+    width:max-content;
+    padding:6px 12px;
+    border-radius:20px;
+    margin-bottom:15px;
+}
+
+.overlay h2{
+    color:white;
+    font-size:2.2rem;
+    line-height:1.2;
+}
+
+.noticias-secundarias{
+    max-width:1400px;
+    margin:30px auto;
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.noticia{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.noticia img{
+    height:220px;
+}
+
+.topo{
+    background: rgb(231, 231, 235);
+    padding: 20px 50px;
+    box-shadow: 0 2px 15px rgba(0,0,0,.08);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.topo h1{
+    color:#243a78;
+    font-size:2.5rem;
+    font-weight:800;
+}
+
+.menu{
+    display:flex;
+    gap:25px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#444;
+    font-weight:600;
+    padding:10px 18px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.menu a:hover{
+    background:#172c67;
+    color:white;
+}
+
+.conteudo{
+    max-width:1200px;
+    margin:30px auto;
+    padding:0 20px;
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.noticia{
+    display:flex;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.noticia:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.noticia img{
+    width:350px;
+    min-width:350px;
+    height:250px;
+    object-fit:cover;
+}
+
+.texto{
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.texto h2{
+    color:#172c67;
+    font-size:1.8rem;
+    margin-bottom:15px;
+    line-height:1.3;
+}
+
+.texto p{
+    color:#666;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+button{
+    align-self:flex-start;
+    background:#172c67;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#2a4ca7;
+}
+
+/* Área de pesquisa */
+.busca {
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+.busca h2 {
+    font-size: 32px;
+    color: #172f70;
+    margin-bottom: 25px;
+}
+
+/* Campo de pesquisa */
+#campoBusca {
+    width: 350px;
+    max-width: 70%;
+    padding: 14px 18px;
+    border: 2px solid #d0d5df;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#campoBusca:focus {
+    border-color: #172f70;
+    box-shadow: 0 0 8px rgba(23, 47, 112, 0.2);
+}
+
+/* Botão */
+#botaoBuscar {
+    padding: 14px 25px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 25px;
+    background-color: #172f70;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#botaoBuscar:hover {
+    background-color: #25499c;
+    transform: translateY(-2px);
+}
+
+.clima {
+    text-align: left;
+    padding: 40px 20px;
+}
+
+.pesquisa-clima {
+    margin-bottom: 25px;
+}
+
+#cidade {
+    padding: 13px 18px;
+    width: 280px;
+    border: 2px solid #d0d5df;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+#cidade:focus {
+    border-color: #172f70;
+}
+
+#buscarClima {
+    padding: 13px 25px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 25px;
+    background-color: #172f70;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#buscarClima:hover {
+    background-color: #25499c;
+}
+
+.card-clima {
+    text-align: left;
+    width: 300px;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: #f1f4fa;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-clima h2 {
+    color: #172f70;
+}
+
+.temperatura {
+    font-size: 45px;
+    font-weight: bold;
+    color: #172f70;
+}
+
+.card-clima p {
+    font-size: 17px;
+}
+
+.erro {
+    color: red;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+
+    .busca h2 {
+        font-size: 26px;
+    }
+
+    #campoBusca {
+        width: 80%;
+        max-width: none;
+        margin-bottom: 12px;
+    }
+
+    #botaoBuscar {
+        margin-left: 0;
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px){
+
+    .noticia,
+    .noticia:nth-child(even){
+        flex-direction: column;
+    }
+
+    .noticia img{
+        width:100%;
+        min-width:100%;
+        height:250px;
+    }
+
+    .texto{
+        padding:20px;
+    }
+
+    .texto h2{
+        font-size:1.6rem;
+        margin-bottom:10px;
+    }
+
+    .texto p{
+        font-size:1rem;
+        margin-bottom:15px;
+    }
+
+}
